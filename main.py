@@ -72,20 +72,68 @@
 #print(Replace)
 
 
-name = input("Enter your name: ").upper()
-age = int(input("Enter your Age: "))
-gender = input("Enter your gender: ").lower()
-Outcome = "Eligible" if age>=18 else "Not eligible"
-print (Outcome)
-if gender in ["male", "female"]:
-    print("name:", name)
-    print("gender:", gender)
-    print ("Registration successful")
-else:
-    print("Invalid gender")
+# name = input("Enter your name: ").upper()
+# age = int(input("Enter your Age: "))
+# gender = input("Enter your gender: ").lower()
+# Outcome = "Eligible" if age>=18 else "Not eligible"
+# print (Outcome)
+# if gender in ["male", "female"]:
+#     print("name:", name)
+#     print("gender:", gender)
+#     print ("Registration successful")
+# else:
+#     print("Invalid gender")
+
+
+# allinfo=[]
+#
+# req1 = ["Name", "Age", "Location" ]
+#
+#
+# for i in req1:
+#     tolist=input(f"Enter your {i}  ")
+#     allinfo.append(tolist)
+#
+#
+#
+# print("*"*50)
+#
+#
+# for index, info in enumerate(allinfo):
+#     print(f"Your {req1[index]} is {info}")
+#
+#
+# age =int(allinfo[1])
+#
+#
+# if  18<= age <=60:
+#     print("You are allowed to vote")
+# else :
+#     print("Not allowed to vote")
 
 
 
+My_info =[]
+
+Typical = ["name", "age", "gender", "location"]
+
+for item in Typical:
+    outcome = input(f" Enter your {item} : ")
+    My_info.append(outcome)
+
+print("*"*55)
+
+for index, item in enumerate(My_info):
+    print(f" Your {Typical[index]} is {item}")
+
+
+age =int(My_info[1])
+
+
+if  18<=age<=60:
+     print("You are allowed to vote")
+else :
+    print("Not allowed to vote")
 
 
 
